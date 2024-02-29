@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px 0px;
+    gap: 20px;
+    justify-content: space-between; 
+}
+
+
+app-card {
+    flex: 0 1 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+}

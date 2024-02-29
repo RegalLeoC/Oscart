@@ -1,0 +1,12 @@
+<p-card header="{{rockCard.nombre}}" subheader="{{rockCard.id}}" [style]="{ width: '360px' }">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="{{rockCard.image}}" [style]="{ height:'250px'}" />
+    </ng-template>
+    <p>
+        {{rockCard.descripcion}}
+    </p>
+   
+    <ng-template pTemplate="footer">
+        <p-button [routerLink]="['details/', rockCard.id]" label="Más" icon="pi pi-check"></p-button>
+    </ng-template>
+</p-card>
